@@ -308,10 +308,11 @@ nav li:hover a {
 /* POPULAIRES */
 
 .populaires img {
-    width: 40%;
-    height: 144px;
+    width: 33%;
+    height: 136px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
     padding: 5px;
-    border-radius: 15px 0 0 15px;
 }
 
 .populaires {
