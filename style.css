@@ -343,7 +343,7 @@ nav li:hover a {
 
 /* ACTIVITES */
 
-.titre-activites {
+.partie-activites .activites-container {
     padding: 30px;
     margin-bottom: -20px;
 }
@@ -524,7 +524,7 @@ ul {
     .activites .container h4 {
         white-space: pre-wrap;
     }
-    
+
     .filtres {
         flex-direction: column; /* Garde le titre en haut */
         align-items: flex-start;
