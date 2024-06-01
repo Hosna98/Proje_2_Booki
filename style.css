@@ -506,23 +506,23 @@ ul {
     
     
     
-    .activites .card {
+    .les-activites .card {
        
         width: 200px;
     }
     
-    .activites img {
+    .les-activites img {
         height: 220px;
         width: 200px;
         border-radius: 20px, 20px, 0px, 0px;
     }
-    .activites .container{
+    .les-activites .container{
         width: 100%;  /* Occupe toute la largeur disponible */
         padding: 5px 10px;  /* Padding réduit (facultatif) */
         border-radius: 0px 0px 20px 20px;
     }
     
-    .activites .container h4 {
+    .les-activites .container h4 {
         white-space: pre-wrap;
     }
 
