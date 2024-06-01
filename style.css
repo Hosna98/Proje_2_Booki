@@ -518,8 +518,9 @@ ul {
     }
     .les-activites .container{
         width: 100%;  /* Occupe toute la largeur disponible */
-        padding: 5px 10px;  /* Padding réduit (facultatif) */
         border-radius: 0px 0px 20px 20px;
+        height: 70px;
+        gap: 10px;
     }
     
     .les-activites .container h4 {
