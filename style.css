@@ -1,6 +1,7 @@
 /* Géneral*/
 * {
     font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
 }
 :root {
     --main-color: #0065FC;
