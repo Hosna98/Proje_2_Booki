@@ -345,7 +345,7 @@ nav li:hover a {
 
 .partie-activites .activites-container {
     padding: 30px;
-    margin-bottom: -20px;
+   
 }
 
 .partie-activites {
@@ -353,7 +353,7 @@ nav li:hover a {
     margin-bottom: 35px;
 }
 
-.activites img {
+.les-activites img {
     object-fit: cover;
     height: 380px;
     width: 100%;
@@ -380,12 +380,12 @@ nav li:hover a {
 }
 
 
-.activites h4 {
+.les-activites h4 {
     padding: 20px;
     white-space: nowrap;
 }
 
-.activites h2{
+.les-activites h2{
     margin-bottom:15px;
 }
 
