@@ -596,63 +596,94 @@ ul {
     
           
     
-        .bouton-recherche {
-        display: none;
-    }
-    
-    .fa-magnifying-glass {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        border: none;
-        border-radius: 0 15px 15px 0;
-        height: 49px;
-        width: 49px;
-        background-color: #0065FC;
-        color: white;
-        font-size: 24px;
-        font-weight: 700;
-        line-height: 21.13px;
-        cursor: pointer; /* Ajouter un curseur pointer pour indiquer que l'icône est cliquable */
-    }
-
-    .containers-filtre {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-        justify-content: center;
-        flex-wrap: wrap;
-        align-items: center;
-    }
-    
-    .button-filtre {
-        width: 162.5px;
-        height: 50px;
-        margin: 4px 5px;
-         padding: 0 15px; /* Réduisez le padding pour permettre un meilleur ajustement du texte */
+            .recherches.texte-accueil h1{
         
-       
-      
+                margin-right: 50px;
+                margin-left: 15px;
+                margin-top:0;
+                margin-bottom: 8px;
+                
+            }
         
-    }
-    .button-filtre p {
-        font-family: Raleway;
-        font-size: 14px; /* Taille de police de 14 pixels */
-        font-weight: 700; /* Poids de police gras */
-        line-height: 16.44px; /* Hauteur de ligne */
-        text-align: left; /* Alignement du texte à gauche */
-    }
-    
-    .texte-acceuil h1 {
-        font-size: 22px; /* Conserve la taille pour les petits écrans */
-        line-height: 25.83px; /* Conserve la hauteur de ligne pour les petits écrans */
-    }
+            .recherches.texte-accueil p{
+                margin-left: 20px;
+                margin-top: 8px;
+            }
+        
+            .recherches {
+                padding: 0 20px;
+            }
+        
+            .texte-recherche input {
+                width: 100%;
+                height: 48px;
+                
+            }
+            .texte-recherche{
+                flex-grow: 1;
+            }
+        
+            .bouton-recherche {
+                display: none;
+            }
+        
+            .fa-magnifying-glass {
+                display: inline-flex;
+                
+                align-items: center;
+                justify-content: center;
+                border: none;
+                border-radius: 15px 15px 15px 15px;
+                height: 49px;
+                width: 49px;
+                background-color: #0065FC;
+                color: white;
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 21.13px;
+                cursor: pointer; /* Ajouter un curseur pointer pour indiquer que l'icône est cliquable */
+            }
+            .barre-de-recherche{
+                margin-left: 20px;
+        
+            }
 
-    .texte-acceuil p {
-        font-size: 16px; /* Conserve la taille pour les petits écrans */
-        line-height: 18.78px; /* Conserve la hauteur de ligne pour les petits écrans */
-    }
-       
+            .containers-filtre {
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+            }
+        
+            .button-filtre {
+                font-size: 14px;
+                width: 45%;
+                min-width: 150px;
+                margin: 15px 5px;
+            }
+            .button-filtre p {
+                font-family: Raleway;
+                font-size: 14px; /* Taille de police de 14 pixels */
+                font-weight: 700; /* Poids de police gras */
+                line-height: 16.44px; /* Hauteur de ligne */
+                text-align: left; /* Alignement du texte à gauche */
+            }
+        
+            .containers-filtre {
+                width: 100%;
+                flex-wrap: wrap;
+                display: flex;
+            }
+            
+            .button-filtre {
+                font-size:14px;
+                width:45%;
+                min-width:150px;
+                margin:15px 5px;
+        
+            }
+            .filtres {
+                margin-left: 20px;
+            }
     
     /* Hébergements et populaires */
 
