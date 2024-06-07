@@ -445,7 +445,6 @@ nav li:hover a {
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     }
 
-
 /* FOOTER */
 
 .footer {
@@ -719,6 +718,19 @@ ul {
         width: 97%;
         margin: 5px;
         
+    }
+    .footer {
+        display: flex;
+        background-color: #F2F2F2;
+        flex-direction: column;
+        margin-top: 75px;
+        box-sizing: border-box;
+        width: 100%; /* Change this to 100% */
+       
+    }
+    .footer-list {
+        width: 100%; /* Ensure the width of footer list elements */
+        box-sizing: border-box;
     }
         
             
