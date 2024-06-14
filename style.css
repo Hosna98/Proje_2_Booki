@@ -59,7 +59,7 @@ h1 {
         text-overflow: ellipsis;
     }
 .euros {
-    font-size: 14px;
+         font-size: 14px;
         line-height: 16.44px;
         font-weight: 600;
     }
@@ -84,43 +84,41 @@ h1 {
   
 
 /* HEADER */
+
 header {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    height: 112px;
+    
 }
 
 .Logo img {
-    width: 61px;
-    height: 19px;
+    height: 1.2rem;
+    align-self: flex-start;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
 }
 
-nav ul {
+.navbar ul {
     display: flex;
-}
+    justify-content: space-around;
+    align-items: start;
+    margin-top: 1.3em;
+    width: 328.6px;
+    height: 100%;
+  }
 
-nav li {
-    border-top: solid 2px transparent;
-    padding: 46px 33.5px;
-}
+.navbar a{
+  text-decoration: none;
+  color: black;
+  padding: 1.1em ;
+}  
 
-nav li:hover {
-    border-top: solid 2px #0065FC;
-    cursor: pointer;    
-    padding: 46px 33.5px; 
-}
-
-.menu a {
-    text-decoration: none;
-    font-weight: 500;
-    color:black;
-}
-
-nav li:hover a {
-    color: #0065FC; 
-}
+.navbar a:hover {
+    color: var(--main-color);
+    border-top: 2px solid var(--main-color);
+   
+  }
 
 /* BARRE DE RECHERCHE */
 
@@ -150,7 +148,7 @@ nav li:hover a {
 .texte-recherche{
     border: solid 1px #F2F2F2;
     border-right: none;
-    width: 236px ;
+    width: 237px ;
     height: 49px;
     
 }
@@ -189,6 +187,10 @@ nav li:hover a {
     font-weight: 400;
     line-height: 18.78px;
 }
+.barre-de-recherche{
+    margin-top: 30px;
+    
+}
 
 /* FILTRES */
 
@@ -219,7 +221,7 @@ nav li:hover a {
     border-radius: 50px;
     margin-right: 20px;
     height: 50px;
-    margin: 4px, 19px, 4px, 19px;
+    margin: 4px 19px 4px 19px;
 }
 
 .button-filtre:hover {
@@ -542,148 +544,143 @@ ul {
     
     }
 
-    
-    @media (max-width: 767.98px) {
-        html{
-            max-width: 767.98px;
-            min-height: 321px;
-        }
+@media (max-width: 767.98px) {
+     html{
+        max-width: 767.98px;
+        min-height: 321px;
+    }
        
-        .main-container{
-            padding:0;
+    .main-container{
+        padding:0;
            
-        }
+    }
 
-        header {
-            flex-direction: column; /* Change la direction en colonne */
-            height: auto; /* Réinitialise la hauteur */
-            align-items: center; /* Centre les éléments horizontalement */
-        }
-
-        .navbar {
-            margin-top: 20px; /* Espacement entre le logo et la navigation */
-        }
+    header {
+        display: block;
+     }
+     .Logo  {
+        height: 4rem;
+        display: block;
+        margin:17px 175px;
+    }
     
-        
-        .Logo {
-            order: -1; /* Place le logo en haut */
-            margin-top: 25px; /* Espacement sous le logo */
-        }
-        
     
-        .navbar {
-            display: block;
-            margin-top: -10px;
-          }
-          .navbar ul {
-            padding: 0; /* Supprimez les espacements par défaut */
-          }
-          .navbar li {
-            display: block;
-            text-align: center;
-            margin-bottom: 10px; /* Ajoutez un espace entre chaque lien */
-          }
-          .navbar a {
-            display: block;
-            padding: 10px; /* Ajoutez un espace autour du texte du lien */
-          }
+    nav {
+        width: 100%;
+        position: static;
+    }
     
-        nav li:hover {
-            border-top: 0;
-            border-bottom: solid 2px #0065FC;  }
+    .navbar ul {
+        padding-left: 0;
+    }
     
-        
-    
-          
-    
-            .recherches.texte-accueil h1{
-        
-                margin-right: 50px;
-                margin-left: 15px;
-                margin-top:0;
-                margin-bottom: 8px;
-                
-            }
-        
-            .recherches.texte-accueil p{
-                margin-left: 20px;
-                margin-top: 8px;
-            }
-        
-            .recherches {
-                padding: 0 20px;
-            }
-        
-            .texte-recherche input {
-                width: 100%;
-                height: 48px;
-                
-            }
-            .texte-recherche{
-                flex-grow: 1;
-            }
-        
-            .bouton-recherche {
-                display: none;
-            }
-        
-            .fa-magnifying-glass {
-                display: inline-flex;
-                
-                align-items: center;
-                justify-content: center;
-                border: none;
-                border-radius: 15px 15px 15px 15px;
-                height: 49px;
-                width: 49px;
-                background-color: #0065FC;
-                color: white;
-                font-size: 24px;
-                font-weight: 700;
-                line-height: 21.13px;
-                cursor: pointer; /* Ajouter un curseur pointer pour indiquer que l'icône est cliquable */
-            }
-            .barre-de-recherche{
-                margin-left: 20px;
-        
-            }
-
-            .containers-filtre {
-                display: flex;
-                flex-wrap: wrap;
-                width: 100%;
-            }
-        
-            .button-filtre {
-                font-size: 14px;
-                width: 45%;
-                min-width: 150px;
-                margin: 15px 5px;
-            }
-            .button-filtre p {
-                font-family: Raleway;
-                font-size: 14px; /* Taille de police de 14 pixels */
-                font-weight: 700; /* Poids de police gras */
-                line-height: 16.44px; /* Hauteur de ligne */
-                text-align: left; /* Alignement du texte à gauche */
-            }
-        
-            .containers-filtre {
-                width: 100%;
-                flex-wrap: wrap;
-                display: flex;
-            }
+    .navbar ul{
+        width: 100%;
+        height: 36px;
+        align-items: center;
+        border-bottom: 2px solid var(--main-bg-color);
+        padding-bottom: 5px;
+        margin-left: 0;
+    }
+     .navbar li {
+        display: block;
+        width: 50%;
+        text-align: center;
             
-            .button-filtre {
-                font-size:14px;
-                width:45%;
-                min-width:150px;
-                margin:15px 5px;
+    }
         
-            }
-            .filtres {
-                margin-left: 20px;
-            }
+        
+    nav a:hover{
+        display: block;
+        width: 100%;
+        border-top: none !important;
+        border-bottom: 2px solid var(--main-color);
+        padding-bottom: 13px;
+    }
+        
+    .recherches {
+        padding: 0 20px;
+        margin-top: 30px;
+        margin-left: 10px;
+        margin-right: 30px;
+     }
+        
+    .texte-recherche input {
+        width: 100%;
+        height: 48px;
+                
+     }
+    .texte-recherche{
+        flex-grow: 1;
+               
+                
+    }
+        
+    .bouton-recherche {
+        display: none;
+               
+     }
+        
+     .fa-magnifying-glass {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        border-radius: 15px 15px 15px 15px;
+        height: 50px;
+        width: 55px;
+        background-color: #0065FC;
+        color: white;
+        font-size: 20px;
+        font-weight: 700px;
+        line-height: 21.13px;
+        cursor: pointer; /* Ajouter un curseur pointer pour indiquer que l'icône est cliquable */
+               
+     }
+            
+
+     .containers-filtre {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+     }
+        
+    .button-filtre {
+        font-size: 14px;
+        width: 48%;
+        min-width: 150px;
+        margin: 15px 5px;
+    }
+    .button-filtre p {
+        font-family: Raleway;
+        font-size: 14px; /* Taille de police de 14 pixels */
+        font-weight: 700; /* Poids de police gras */
+        line-height: 16.44px; /* Hauteur de ligne */
+        text-align: left; /* Alignement du texte à gauche */
+     }
+        
+    .containers-filtre {
+        width: 100%;
+        flex-wrap: wrap;
+        display: flex;
+    }
+            
+    .button-filtre {
+        font-size:14px;
+        width:45%;
+        min-width:150px;
+        margin:15px 5px;
+        
+    }
+
+    .filtres {
+        margin-left: 20px;
+    }
+    
+    .information{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
     
     /* Hébergements et populaires */
 
